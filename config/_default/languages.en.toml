@@ -1,0 +1,26 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "Asterisk"
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "https://avatars.githubusercontent.com/u/192569687?s=500&v=4"
+  # secondaryLogo = "img/secondary-logo.͙png"
+  # description = "My awesome website"
+  # copyright = "Copy, _right?_ :thinking_face:"
+
+[params.author]
+  name = "Asterisk"
+  email = "asterisk-app@proton.me"
+  image = "https://avatars.githubusercontent.com/u/192569687?s=500&v=4"
+  imageQuality = 96
+  headline = "<br>🚀 Simple, Secure & Self-Hosted End-to-End Encrypted Chat App 🔒<br>"
+  links = [
+    { github = "https://github.com/asterisk-app" },
+    # { mastodon = "https://mastodon.instance/@username" },
+  ]
