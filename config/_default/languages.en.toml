@@ -21,6 +21,10 @@ title = "Asterisk"
   imageQuality = 96
   headline = "<br>🚀 Simple, Secure & Self-Hosted End-to-End Encrypted Chat App 🔒<br>"
   links = [
-    { github = "https://github.com/asterisk-app" },
+    # { github = "https://github.com/asterisk-app" },
     # { mastodon = "https://mastodon.instance/@username" },
+  ]
+  buttons = [
+    { Download = "/downloads" },
+    { Documentation = "/docs" },
   ]

@@ -1,0 +1,26 @@
+<article class="max-w-full prose dark:prose-invert">
+  {{ with .Title }}
+    <header>
+      <h1>{{ . | emojify }}</h1>
+    </header>
+  {{ end }}
+  <!-- Button Section -->            
+  <div class="items-center justify-between">
+    {{ with .Site.Params.Author.buttons }}
+    {{ range $buttons := . }}
+    {{ range $name, $url := $buttons }}
+    <a href="{{ $url }}" target="_self" aria-label="{{ $name | title }}" rel="me noopener noreferrer">
+        <button
+        class="bg-transparent hover:text-primary-500 prose dark:prose-invert font-semibold hover:text-white py-2 px-4 border border-primary-500 hover:border-transparent rounded">
+        {{ $name | title }}
+        </button>
+    </a>
+    {{ end }}
+    {{ end }}
+    {{ end }}
+  </div>
+  <section>{{ .Content }}</section>
+</article>
+<section>
+  {{ partial "recent-articles/main.html" . }}
+</section>
